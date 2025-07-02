@@ -5,7 +5,7 @@ function Img({ src, left, right, top, bottom, width }) {
   const [animateIn, setAnimateIn] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setAnimateIn(true), 3000);
+    const timer = setTimeout(() => setAnimateIn(true), 1500);
     return () => clearTimeout(timer);
   }, []);
 
