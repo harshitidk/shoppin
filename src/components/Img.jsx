@@ -1,7 +1,20 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-function Img({ src, left, right, top, bottom, width }) {
+function useIsMd(){
+  const [isMd, setIsMd] = useState(window.innerWidth >= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMd(window.innerWidth >= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  return isMd; // <-- add this line
+}
+
+function Img({ src, mobilePos, mdPos }) {
+  let isMd = useIsMd();
+  let pos = isMd ? mdPos : mobilePos;
+  let { left, right, top, bottom, width } = pos;
   const [animateIn, setAnimateIn] = useState(false);
 
   useEffect(() => {

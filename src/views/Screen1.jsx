@@ -4,9 +4,13 @@ import Gradient from '../components/Gradient.jsx';
 import Search from '../components/Search.jsx';
 import ImgGroup from '../components/ImgGroup.jsx';
 import axios from 'axios';
+import {motion} from 'framer-motion';
 
 function Screen1() {
     const [search, set_query] = useState("Dark Academia");
+    const [loading, set_loading] = useState(true);
+
+
     function search_query(value){
         set_query(value);
         console.log(value);
@@ -29,7 +33,7 @@ function Screen1() {
         fetchData();
     }, [search]);
 
-    return(<div className='flex flex-col justify-center items-center relative w-screen overflow-hidden h-screen bg-white pb-15'>
+    return(<div className='flex relative flex-col justify-center items-center relative w-screen h-screen bg-white pb-15'>
         <div className='relative z-10 md:bottom-10 bottom-10 ml-3'><Head /></div>
         <div className='relative z-20 md:mt-0 mt-0 md:mr-10'><Search search_query={search_query} /></div>
         <div className='absolute w-screen bottom-6 md:-bottom-140 z-0 md:blur-[172.5px] blur-[80px] scale-240 md:scale-100'><Gradient /></div>

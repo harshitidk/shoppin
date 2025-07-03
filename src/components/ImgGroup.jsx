@@ -1,15 +1,26 @@
 import Img from './Img.jsx';
 
 function ImgGroup({ data }) {
-  const fixedPositions = [
+  const mdpos = [
     { left: 8, top: 10, width: 150 },
     { right: 15, top: 16, width: 150 },
     { right: 34, bottom: 12, width: 120 },
     { bottom: 0, right: 5, width: 150 },
-    { left: 22, bottom: 16, width: 140 },
+    { left: 26, bottom: 6, width: 170 },
     { left: 32, top: 2, width: 120 },
     { left: 3, bottom: -4, width: 130 },
-    { top: 0, right: 40, width: 150 },
+    { right: 40, top: 10, width: 100 },
+  ];
+
+  const mobilepos = [
+    { left: 8, top: 10, width: 40 },
+    { right: 15, top: 16, width: 60 },
+    { right: 34, bottom: 12, width: 60 },
+    { bottom: 0, right: 5, width: 80 },
+    { left: 26, bottom: 6, width: 70 },
+    { left: 32, top: 2, width: 50 },
+    { left: 3, bottom: 20, width: 50 },
+    { right: 40, top: 10, width: 30 },
   ];
 
   const placeholderImages = [
@@ -24,12 +35,16 @@ function ImgGroup({ data }) {
   ];
 
   const imagesToShow = data?.length ? data.images : placeholderImages;
-  const count = Math.min(imagesToShow.length, fixedPositions.length);
+  const count = Math.min(imagesToShow.length, mdpos.length);
 
   return (
     <div className='group'>
       {imagesToShow.slice(0, count).map((src, i) => (
-        <Img key={i} src={src} {...fixedPositions[i]} />
+        <Img
+          src={src}
+          mobilePos={mobilepos[i]}
+          mdPos={mdpos[i]}
+        />
       ))}
     </div>
   );
