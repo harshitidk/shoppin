@@ -42,7 +42,7 @@ function Img({ src, mobilePos, mdPos }) {
 
   return (
     <motion.div
-      className="absolute"
+      className="absolute rounded-[12px] overflow-hidden"
       initial={initial}
       animate={animateIn ? animate : initial}
       transition={{ duration: 1.2, ease: 'easeOut' }}

@@ -7,10 +7,10 @@ function Head({search}){
     useEffect(() => {
         setSearchQuery(search);
     },[search])
-    return(<div className="flex relative items-center justify-center relative text-[#383838]"> 
+    return(<div className="flex relative items-center justify-center relative text-[#383838] font-normal"> 
         <div className="flex justify-center w-fit items-center gap-4 mr-4 md:text-7xl text-4xl font-normal leading-none">pov<span className='text-4xl relative tracking-[0.0rem] top-[4px]'>:</span></div>
         <div className='flex justify-center relative top-1'>
-            <div className='relative w-50 md:w-80 md:text-[1.6rem] text-[1rem] leading-[1.2]'>you search for {search_query} on shoppin🍓</div>
+            <div className='relative w-50 md:w-80 md:text-[1.6rem] text-[1rem] leading-[1.2]'>you search for <span className='text-[#FF444F] italic font-medium'>{search_query}</span> on shoppin🍓</div>
         </div>
     </div>)
 }

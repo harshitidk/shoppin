@@ -4,10 +4,11 @@ import Gradient from '../components/Gradient.jsx';
 import Search from '../components/Search.jsx';
 import ImgGroup from '../components/ImgGroup.jsx';
 import { useInView } from 'react-intersection-observer';
+import '../index.css'; // Ensure this is imported to apply styles
 
 function Hero() {
     const { ref: compRef, inView } = useInView({ threshold: 0 });
-    const [search, set_query] = useState("Dark Academia");
+    const [search, set_query] = useState("dark academia");
     useEffect(() => {
         console.log(compRef.current);
     },[inView]);
@@ -20,7 +21,7 @@ function Hero() {
     return (
         <div
             ref={compRef}
-            className={`flex relative flex-col justify-center items-center w-full h-[80dvh] md:h-[90vh] bg-white mt-[10vh] md:mt-[10vh] pb-10 transition-opacity duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}
+            className={`flex relative flex-col justify-center items-center w-full h-[80dvh] md:h-[90vh] mt-[10vh] md:mt-[10vh] pb-10 transition-opacity duration-700 bg-[#F5F2E8] ${inView ? 'opacity-100' : 'opacity-0'}`}
         >
             <div className='flex flex-col items-center justify-center relative'>
                 <div className='relative z-10 md:bottom-10 bottom-10 ml-3'><Head search={search} /></div>
