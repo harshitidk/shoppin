@@ -20,7 +20,7 @@ function Hero() {
     return (
         <div
             ref={compRef}
-            className={`flex relative flex-col justify-center items-center w-screen min-h-screen bg-white pb-10 transition-opacity duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}
+            className={`flex relative flex-col justify-center items-center w-full h-[80dvh] md:h-[90vh] bg-white mt-[10vh] md:mt-[10vh] pb-10 transition-opacity duration-700 ${inView ? 'opacity-100' : 'opacity-0'}`}
         >
             <div className='flex flex-col items-center justify-center relative'>
                 <div className='relative z-10 md:bottom-10 bottom-10 ml-3'><Head search={search} /></div>

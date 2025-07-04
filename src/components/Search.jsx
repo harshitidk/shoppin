@@ -1,6 +1,6 @@
 function Search({search_query}){
     return(
-        <div className="flex justify-left items-center border-1 rounded-full gap-1 px-4 md:text-[1.2rem] text-[1rem] md:w-120 border border-[rgba(255,194,194,0.4)] 
+        <div className="flex justify-left items-center border-2 rounded-full gap-1 px-4 md:text-[1.2rem] text-[1rem] md:w-120 border border-[rgba(221, 221, 221, 0.4)] 
         bg-[rgba(255,255,255,0.6)] backdrop-blur-[7.05px] w-80">
             <svg className="md:scale-80 scale-75"  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 20 20"  fill="none"  stroke="black"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
             <input 
