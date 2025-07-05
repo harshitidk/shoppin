@@ -21,14 +21,14 @@ function Hero() {
     return (
         <div
             ref={compRef}
-            className={`flex relative flex-col justify-center items-center w-full h-[80dvh] md:h-[90vh] mt-[10vh] md:mt-[10vh] pb-10 transition-opacity duration-700 bg-[#F5F2E8] ${inView ? 'opacity-100' : 'opacity-0'}`}
+            className={`flex relative flex-col justify-center items-center w-full pt-[12vh] md:pt-0 h-[80dvh] md:h-[90vh] mt-[10vh] md:mt-[10vh] pb-10 transition-opacity duration-700 bg-[#F5F2E8] ${inView ? 'opacity-100' : 'opacity-0'}`}
         >
             <div className='flex flex-col items-center justify-center relative'>
-                <div className='relative z-10 md:bottom-10 bottom-10 ml-3'><Head search={search} /></div>
-                <div className='relative z-20 md:mt-0 mt-0 bottom-2'><Search search_query={search_query} /></div>
+                <div className='relative z-10 md:bottom-10 bottom-5 ml-3 '><Head search={search} /></div>
+                <div className='relative z-20 md:mt-0 mt-0 bottom-0 md:bottom-2'><Search search_query={search_query} /></div>
             </div>
             {/* <div className='absolute w-full bottom-6 md:-bottom-140 z-0 md:blur-[172.5px] blur-[80px] scale-240 md:scale-100'><Gradient /></div> */}
-            <div className='absolute h-full w-full top-0 left-0'><ImgGroup /></div>
+            <div className='md:absolute relative md:h-full w-full top-0 left-0 mt-10 md:mt-0'><ImgGroup /></div>
         </div>
     );
 }

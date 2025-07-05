@@ -4,26 +4,27 @@ import Img from './Img.jsx';
 function ImgGroup({ data }) {
   
   const mdpos = [
-    { left: 8, top: 10, width: 150 },
-    { right: 15, top: 16, width: 150 },
-    { right: 34, bottom: 12, width: 120 },
-    { bottom: 0, right: 5, width: 150 },
-    { left: 26, bottom: 6, width: 170 },
-    { left: 32, top: 2, width: 120 },
-    { left: 3, bottom: -4, width: 130 },
-    { right: 40, top: 10, width: 100 },
+    { left: 16, top: 6, width: 120, borderRadius: 14 },
+    { left: 12, bottom: 8, width: 160, borderRadius: 14 },
+    { left: 38, top: 9, width: 80, borderRadius: 8 },
+    { left: 59, top: 6, width: 70, borderRadius: 8 },
+    { left: 76, top: 8, width: 130, borderRadius: 14 },
+    { left: 76, bottom: 3, width: 200, borderRadius: 14 },
+    { left: 56, bottom: 11, width: 130, borderRadius: 14 },
+    { left: 35, bottom: 16, width: 90, borderRadius: 8 },
   ];
 
-  const mobilepos = [
-    { left: 8, top: 10, width: 40 },
-    { right: 13, top: 15, width: 70 },
-    { right: 22, bottom: 19, width: 90 },
-    { bottom: 0, right: 5, width: 80 },
-    { left: 23, bottom: 6, width: 90 },
-    { left: 32, top: 2, width: 50 },
-    { left: 8, bottom: 25, width: 120 },
-    { right: 40, top: 10, width: 35 },
-  ];
+  // spreading the images in mobile
+const mobilepos = [
+    { left: 0, top: 0, width: 110, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
+    { left: 0, top: 0, width: 110, borderRadius: 8 },
+    { left: 0, top: 0, width: 110, borderRadius: 8 },
+    { left: 0, top: 0, width: 110, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 110, borderRadius: 8 },
+];
 
   const placeholderImages = [
     "https://i.pinimg.com/736x/ab/b1/54/abb1546c171e8a7515d893bff4257a3a.jpg",
@@ -40,7 +41,8 @@ function ImgGroup({ data }) {
   const count = Math.min(imagesToShow.length, mdpos.length);
 
   return (
-    <div className='group'>
+    <div className='group h-[50vh] md:h-full flex flex-wrap w-[100%] md:w-full gap-2 gap-y-3 px-2 justify-center items-center
+     relative'>
       {imagesToShow.slice(0, count).map((src, i) => (
         <Img
           key={i}

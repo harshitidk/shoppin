@@ -9,7 +9,7 @@ function SearchImg() {
         <div className='md:text-left text-center md:text-[2.8rem] text-[1.4rem] md:w-93 w-50 md:leading-14 leading-6 text-black'>search what you <span className='italic text-[#FF444F]'>see</span></div>
         <div className='md:text-[1.3rem] md:w-93 w-60 pt-4 text-gray-400 text-center md:text-left'>got fashion inspiration lying in your gallery? upload it on shoppin' and see us do our magic</div>
       </div>
-      <div className="absolute bottom-0 z-0 opacity-70"><img src={Search} alt="Wardrobe" className='md:w-90 w-60 scale-300 relative bottom-[20vh] md:bottom-[-5vh] md:scale-420 object-contain' /></div>
+      <div className="absolute bottom-0 z-0 opacity-70"><img src={Search} alt="Wardrobe" className='md:w-100 w-60 scale-300 relative bottom-[20vh] md:bottom-[-5vh] md:scale-420 object-contain' /></div>
     </div>
   );
 }

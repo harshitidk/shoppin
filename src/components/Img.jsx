@@ -8,7 +8,7 @@ function useIsMd(){
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  return isMd; // <-- add this line
+  return isMd;
 }
 
 function Img({ src, mobilePos, mdPos }) {
@@ -40,15 +40,23 @@ function Img({ src, mobilePos, mdPos }) {
     bottom: bottom !== undefined ? `${bottom}%` : undefined,
   };
 
+  const borderRadius = 10;
+  console.log(width)
+
   return (
     <motion.div
-      className="absolute rounded-[12px] overflow-hidden"
+      className={`relative md:absolute overflow-hidden rounded-[${borderRadius}px]`}
       initial={initial}
       animate={animateIn ? animate : initial}
       transition={{ duration: 1.2, ease: 'easeOut' }}
-      style={{ width: `${width}px` }}
+      style={{ width: `${width}px`, borderRadius: `${borderRadius}px` }}
     >
-      <img src={src} style={{ width: `${width}px` }} />
+      <img 
+        src={src} 
+        style={{ width: `${width}px`, borderRadius: `${borderRadius}px` }}
+        // className="border border-white"
+        alt=""
+      />
     </motion.div>
   );
 }
