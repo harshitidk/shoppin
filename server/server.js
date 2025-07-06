@@ -1,28 +1,19 @@
-const functions = require('firebase-functions');
-const cons = require('cors')({origin: true});
+const express = require('express');
+const app = express();
+const port = 3000;
 
-const cheerio = require('cheerio');
-const getUrls = require('get-urls');
-const fetch = require('node-fetch');
+// Middleware
+app.use(function(req, res, next) {
+  console.log("middleware");
+  next();
+});
 
-const scrapeMetatags = (text) => {
-  const urls = Array.from(getUrls(text))
-  const requests = urls.map(async url => {
-    const res = await fetch(url);
-    const html = await res.text();
-    const $ = cheerio.load(html);
+// Route
+app.get("/profile/:username", function(req, res) {
+  res.send(`hello world ${req.params.username}`);
+});
 
-    const getMetatag = (name) =>
-      $(`meta[name=${name}]`).attr('content'),
-    
-    return {
-      url, 
-      title: $('title').first().text(),
-      favicon: $('link[rel="shortcut icon"]').attr('href'),
-      description: $('meta[name=description]').attr('content'),
-    }
-  }
-  );
-
-  return Promise.all(requests);
-}
+// Start server
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
