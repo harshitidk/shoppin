@@ -3,6 +3,8 @@
 A responsive and aesthetic landing page built for **Shoppin'**, a Gen Z–oriented fashion discovery platform.  
 This project was designed and developed using **React** and **Tailwind CSS**, with a focus on layout design, responsiveness, and smooth user experience.
 
+https://harshitidk.github.io/shoppin/
+
 ---
 
 ## ✨ Features
