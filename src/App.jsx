@@ -8,6 +8,7 @@ import SearchImg from './views/SearchImg.jsx';
 import Swipe from './views/Swipe.jsx';
 import SingleCart from './views/Checkout.jsx';
 import shoppin from './assets/shoppin.webp';
+import Tryon from './views/Tryon.jsx';
 
 function App(){
   return(
@@ -29,6 +30,7 @@ function App(){
       <div className='snap-start'><SearchImg /></div>
       <div className='snap-start'><Swipe /></div>
       <div className='snap-start'><SingleCart /></div>
+      <div className='snap-start'><Tryon /></div>
     </div>
   )
 }

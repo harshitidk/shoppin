@@ -15,15 +15,15 @@ function ImgGroup({ data }) {
   ];
 
   // spreading the images in mobile
-const mobilepos = [
-    { left: 0, top: 0, width: 110, borderRadius: 14 },
-    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
-    { left: 0, top: 0, width: 110, borderRadius: 8 },
-    { left: 0, top: 0, width: 110, borderRadius: 8 },
-    { left: 0, top: 0, width: 110, borderRadius: 14 },
-    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
-    { left: 0, bottom: 0, width: 110, borderRadius: 14 },
-    { left: 0, bottom: 0, width: 110, borderRadius: 8 },
+  const mobilepos = [
+    { left: 0, top: 0, width: 100, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 100, borderRadius: 14 },
+    { left: 0, top: 0, width: 100, borderRadius: 8 },
+    { left: 0, top: 0, width: 100, borderRadius: 8 },
+    { left: 0, top: 0, width: 100, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 100, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 100, borderRadius: 14 },
+    { left: 0, bottom: 0, width: 100, borderRadius: 8 },
 ];
 
   const placeholderImages = [
@@ -41,7 +41,7 @@ const mobilepos = [
   const count = Math.min(imagesToShow.length, mdpos.length);
 
   return (
-    <div className='group h-[50vh] md:h-full flex flex-wrap w-[100%] md:w-full gap-2 gap-y-3 px-2 justify-center items-center
+    <div className='group h-[50vh] md:h-full flex flex-wrap w-[100%] md:w-full gap-3 gap-y-3 px-2 justify-center items-center
      relative'>
       {imagesToShow.slice(0, count).map((src, i) => (
         <Img
