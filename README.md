@@ -47,12 +47,15 @@ This project was designed and developed using **React** and **Tailwind CSS**, wi
    git clone https://github.com/harshitidk/shoppin.git
 
 2. Navigate the file
+   ```bash
    cd shoppin-landing-page
    
-3. Install dependencies
+4. Install dependencies
+   ```bash
    npm install
 
-4. Start the development server
+5. Start the development server
+   ```bash
    npm run dev
 
 ## 🗓️ Timeline 
