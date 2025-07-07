@@ -55,14 +55,14 @@ This project was designed and developed using **React** and **Tailwind CSS**, wi
 4. Start the development server
    npm run dev
 
-🗓️ Timeline
+##🗓️ Timeline
 This project was completed in 4–5 days, with daily iteration and problem-solving across layout, styling, and responsive behavior. It served as a crash course in applying design to code for real-world product use.
 
-🙌 Why This Project Mattered
+##🙌 Why This Project Mattered
 This wasn’t just another frontend clone — it taught me how to design, implement, and adapt a live product from scratch.
 From building snap layouts to managing dynamic positioning logic in React, every step was a valuable learning experience.
 
-📎 License
+##📎 License
 This project is open for learning and personal experimentation. Fork it, remix it, or build on top of it.
 
 
