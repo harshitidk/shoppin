@@ -1,12 +1,70 @@
-# React + Vite
+# 🛍️ Shoppin' Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and aesthetic landing page built for **Shoppin'**, a Gen Z–oriented fashion discovery platform.  
+This project was designed and developed using **React** and **Tailwind CSS**, with a focus on layout design, responsiveness, and smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📱 **Fully Responsive Layout**  
+  Works seamlessly across mobile, tablet, and desktop screen sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎯 **Snap Scroll Effect**  
+  Implemented section snap transitions for a focused, scroll-driven experience.
+
+- 🎨 **Polished Visual Hierarchy**  
+  Tailored design to match Gen Z expectations with bold typography and clean structure.
+
+- 🔧 **Modular Code Structure**  
+  Clean React component structure for scalability and readability.
+
+---
+
+## 🔧 Tech Stack
+
+- **React.js**
+- **Tailwind CSS**
+- **CSS Scroll Snap**
+- (Optional: Figma for design planning)
+
+---
+
+## 🧠 What I Learned
+
+- Tailwind’s utility-first styling and responsive breakpoints
+- Setting up section-based scroll snapping for better UX
+- Organizing and positioning elements using flex/grid layouts
+- Implementing dynamic layout positioning using React + Tailwind together
+- Debugging layout and responsive issues across different screens
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/harshitidk/shoppin.git
+
+2. Navigate the file
+   cd shoppin-landing-page
+   
+3. Install dependencies
+   npm install
+
+4. Start the development server
+   npm run dev
+
+🗓️ Timeline
+This project was completed in 4–5 days, with daily iteration and problem-solving across layout, styling, and responsive behavior. It served as a crash course in applying design to code for real-world product use.
+
+🙌 Why This Project Mattered
+This wasn’t just another frontend clone — it taught me how to design, implement, and adapt a live product from scratch.
+From building snap layouts to managing dynamic positioning logic in React, every step was a valuable learning experience.
+
+📎 License
+This project is open for learning and personal experimentation. Fork it, remix it, or build on top of it.
+
+
+
+
